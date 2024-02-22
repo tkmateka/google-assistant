@@ -1,0 +1,13 @@
+{
+    "displayName": "valor-mobile",
+    "appName": "valor-mobile",
+    "description": "This simple app will get current location of mobile device and transmit that and date time stamp to an API.",
+    "lastModified": "2024-02-22T15:42:01.472Z",
+    "imgSourcePath": "",
+    "version": "1.0.0",
+    "appType": "uiOnly",
+    "templateName": "blank",
+    "createDate": "2024-02-22T15:42:00.274Z",
+    "analyticsId": "d0fbc7f5-7269-00b4-ccfa-5690786c0930",
+    "createdStudioVersion": "9.2.1"
+}
