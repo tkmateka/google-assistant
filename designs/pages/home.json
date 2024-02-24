@@ -70,7 +70,7 @@
         "viewType": "common",
         "nodeType": "flow",
         "name": "",
-        "script": "if (navigator.geolocation) {\n    navigator.geolocation.getCurrentPosition(\n        position => {\n            page.location = {\n                latitude: position.coords.latitude,\n                longitude: position.coords.longitude,\n                message: `Latitude: ${position.coords.latitude} \\n Longitude: ${position.coords.longitude}`\n            };\n        },\n        error => {\n            bh.result = error;\n            console.error(\"Error getting location\", error);\n        }\n    );\n} else {\n    console.error(\"Geolocation is not supported by this browser.\");\n}",
+        "script": "if (navigator.geolocation) {\n    navigator.geolocation.getCurrentPosition(\n        position => {\n            page.location = {\n                latitude: position.coords.latitude,\n                longitude: position.coords.longitude,\n                timestamp: Date.now(),\n                message: `Latitude: ${position.coords.latitude} <br> Longitude: ${position.coords.longitude}`\n            };\n        },\n        error => {\n            bh.result = error;\n            console.error(\"Error getting location\", error);\n        }\n    );\n} else {\n    console.error(\"Geolocation is not supported by this browser.\");\n}",
         "functionName": "sd_lHgJp97nb9Oa4rNc",
         "category": "Function",
         "x": 305,

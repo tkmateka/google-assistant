@@ -77,7 +77,8 @@ export class homeComponent {
             page.location = {
               latitude: position.coords.latitude,
               longitude: position.coords.longitude,
-              message: `Latitude: ${position.coords.latitude} \n Longitude: ${position.coords.longitude}`,
+              timestamp: Date.now(),
+              message: `Latitude: ${position.coords.latitude} <br> Longitude: ${position.coords.longitude}`,
             };
           },
           (error) => {
